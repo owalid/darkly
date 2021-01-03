@@ -1,0 +1,24 @@
+avant de commencer le projet j'ai effectuer un scan sur le site pour me donner des indices:
+
+python3 dirsearch.py -u "http://192.168.99.102/" -e php
+
+[17:56:14] Starting:
+[17:56:22] 301 -  184B  - /admin  ->  http://192.168.99.102/admin/
+[17:56:22] 200 -    1KB - /admin/
+[17:56:22] 200 -    1KB - /admin/?/login
+[17:56:22] 200 -    1KB - /admin/index.php
+[17:56:24] 301 -  184B  - /audio  ->  http://192.168.99.102/audio/
+[17:56:27] 301 -  184B  - /css  ->  http://192.168.99.102/css/
+[17:56:28] 301 -  184B  - /errors  ->  http://192.168.99.102/errors/
+[17:56:28] 403 -  570B  - /errors/
+[17:56:28] 200 -    1KB - /favicon.ico
+[17:56:29] 301 -  184B  - /fonts  ->  http://192.168.99.102/fonts/
+[17:56:30] 403 -  570B  - /images/
+[17:56:30] 301 -  184B  - /images  ->  http://192.168.99.102/images/
+[17:56:30] 403 -  570B  - /includes/
+[17:56:30] 301 -  184B  - /includes  ->  http://192.168.99.102/includes/
+[17:56:30] 200 -    7KB - /index.php
+[17:56:30] 403 -  570B  - /js/
+[17:56:30] 301 -  184B  - /js  ->  http://192.168.99.102/js/
+[17:56:34] 200 -   53B  - /robots.txt
+[17:56:36] 200 -   14B  - /test.php
