@@ -1,0 +1,7 @@
+Dans http://192.168.99.102/?page=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c
+
+on peux voir un commentaire ultra long quand on ouvre le code source de la page
+
+on en deduis alors qu'il faut venir du site de la nsa et de changer l'user agent en "ft_bornToSec"
+
+en utilisant l'addons firefox: `Modify Header Value` qui nous permet de changer la valeur d'un header
