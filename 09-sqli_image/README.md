@@ -19,3 +19,6 @@ testons alors d'afficher les comment et le title:
 1 AND 1 = 2 UNION ALL SELECT title, comment FROM list_images
 
 
+Amelioration:
+
+Gerer les sqli, protegers les strings envoyer en request.

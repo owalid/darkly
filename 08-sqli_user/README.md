@@ -49,3 +49,7 @@ testons alors les deux dernieres qui ont l'air suspectes.... :
 bingo !
 
 
+Amelioration:
+
+Gerer les sqli, protegers les strings envoyer en request.
+

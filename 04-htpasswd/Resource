@@ -1,7 +1,0 @@
-/whatever route obtenu dans le robots.txt
-
-fichier contenant: root:8621ffdbc5698829397d97767ac13db3
-j'ai decrypter le md5 ce qui donne: dragon
-
-on peux voir root et dans le scan nous avons vu une page s'appelant admin qui repondais en 200 (donc une page web)
-on peux alors tester ce couple de login + passwd
