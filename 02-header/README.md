@@ -10,7 +10,7 @@ You must come from : "https://www.nsa.gov/"
 
 Changer les headers pour:
 
-Referer: "ft_bornToSec"
+Referer: "https://www.nsa.gov/"
 User-Agent: "ft_bornToSec"
 
 

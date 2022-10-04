@@ -53,3 +53,10 @@ Amelioration:
 
 Gerer les sqli, protegers les strings envoyer en request.
 
+
+First name: 5ff9d0165b4f92b14994e5c685cdce28
+Surname : Decrypt this password -> then lower all the char. Sh256 on it and it's good !
+
+
+5ff9d0165b4f92b14994e5c685cdce28: FortyTwo
+=> lower + sh256 = 10a16d834f9b1e4068b25c4c46fe0284e99e44dceaf08098fc83925ba6310ff5
