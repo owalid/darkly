@@ -8,3 +8,8 @@ payload:
 logiquement la faille s'arrete la et on devrait avoir le flag.
 
 mais il faut envoyer "a" ou "script" sans "<" et ">" pour que le flag soit retouner.
+
+
+### Amelioration
+
+Parser les xss
