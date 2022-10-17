@@ -1,4 +1,4 @@
-On peu voir que certaines pages sont charger avec un query parameters `page`:
+On peut voir que certaines pages sont charger avec un query parameters `page`:
 
 > http://192.168.99.102/?page=<page_name>
 
@@ -14,7 +14,7 @@ payload:
 
 On obtiens le flag :)
 
-Amelioration:
+### Amelioration
 
 Utiliser un chemin absolu pour les images, et ne pas utiliser de chemin relatif.
 Proteger le parametre page pour pouvoir utiliser uniquement des fichiers php, et ne pas pouvoir remonter dans le dossier.

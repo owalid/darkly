@@ -1,11 +1,15 @@
 
-J'upload le fichier php et je change uniquement le Content-Type:
+Le formulaire nous permet d'upload des images.
+
+Seul le header content-type est verifier. Nous pouvons uploader un fichier php avec un header d'une image
+
+Exemple:
 
 ```
 Content-Type: image/jpeg
 ```
 
 
-Amelioration:
+### Amelioration:
 
 Verifier les Content-Type et les extensions des fichiers uploadés.

@@ -4,6 +4,6 @@ avec un body: `mail=lol%40borntosec.com&Submit=Submit`
 
 On peut donc envoyer un mail à l'adresse de notre choix. On peu egalement recuperer un mail interne "webmaster@borntosec.com".
 
-amelioration:
+### Amelioration
 
 Gerer ca en back, si l'utilisateur n'existe pas en db, ne pas envoyer de mail
