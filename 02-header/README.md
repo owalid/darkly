@@ -5,9 +5,8 @@ on peux voir un commentaire super long quand on ouvre le code source de la page
 on en deduis alors qu'il faut venir du site de la nsa et de changer l'user agent en "ft_bornToSec"
 
 
-Let's use this browser : "ft_bornToSec"
-
-You must come from : "https://www.nsa.gov/"
+> Let's use this browser : "ft_bornToSec"
+> You must come from : "https://www.nsa.gov/"
 
 Changer les headers pour:
 
