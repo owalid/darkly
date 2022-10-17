@@ -1,7 +1,16 @@
-On peux voir qu'une image est chargé de cette facon: background-image: "../images/banner.jpg"
-ce qui peux nous alerter sur l'exploit transversal path
+On peu voir que certaines pages sont charger avec un query parameters `page`:
 
-On peu tester une attaque LFI: ../../../../../../../../../etc/passwd
+> http://192.168.99.102/?page=<page_name>
+
+
+Nous pouvons alors essayer de lancer une attaque `transversal path`
+
+
+payload:
+
+```
+../../../../../../../../../etc/passwd
+```
 
 On obtiens le flag :)
 
