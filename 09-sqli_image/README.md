@@ -6,7 +6,8 @@ Nous savons déjà comment lister les colonnes et les tables de la db:
 1 AND 1=2 UNION ALL SELECT table_name, column_name FROM information_schema.columns
 ```
 
-un petit CMD + F d'image nous indique directement que la table à exploité est `list_images`:
+
+un petit <kbd>CMD</kbd>+<kbd>F</kbd> d'image nous indique directement que la table à exploité est `list_images`:
 
 dans la table list_images nous avons:
 id
