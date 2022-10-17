@@ -1,4 +1,4 @@
-on peux voir dans les cookies: 68934a3e9455fa72420237eb05902327 qui quand on le dechiffre en md5 on obtiens la valeure "false".
+on peux voir dans les cookies: 68934a3e9455fa72420237eb05902327 qui quand on le dechiffre en md5 on obtiens la valeur "false".
 
 Il suffit de chiffré en md5 la chaine "true" pour passer en admin.
 
