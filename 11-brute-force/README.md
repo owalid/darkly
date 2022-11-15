@@ -1,7 +1,6 @@
 Nous avons accees a une page de connexion. Aucune faille ne semble visible dans les requetes ou header http.
 
-Allons chercher un petit dictionnaire sur: https://wiki.skullsecurity.org/Passwords#Password_dictionaries
-
+Nous devons telecharger un dictionnaire, le plus connu est rockyou.txt.
 L'idée est de faire une boucle sur chaque mot du dictionnaire et de tester si le mot de passe est le bon.
 
 
