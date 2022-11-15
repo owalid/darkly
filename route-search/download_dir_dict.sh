@@ -1,0 +1,1 @@
+curl -o dir-list-lowercase.txt "https://raw.githubusercontent.com/v0re/dirb/master/wordlists/big.txt"
