@@ -2,10 +2,13 @@ package main
 
 import (
 	"bufio"
+	"io"
 	"log"
 	"net/http"
 	"os"
 	"os/exec"
+	"strconv"
+	"strings"
 )
 
 func fileNotExists(fileName string) bool {
@@ -64,9 +67,13 @@ func main() {
 		var url = baseUrl + "/" + route
 		ret, err := http.Get(url)
 
-		if err == nil && ret.StatusCode != 404 {
-			log.Fatal("[ ", ret.StatusCode, " ] ", route)
-			return
+		// get html from ret
+		bodyBytes, _ := io.ReadAll(ret.Body)
+		bodyString := string(bodyBytes)
+
+		// if not have 404 in bodyString
+		if err == nil && ret.StatusCode != 404 && !strings.Contains(bodyString, "404") {
+			log.Println("[ " + strconv.Itoa(ret.StatusCode) + " ] /" + route)
 		}
 	}
 }
